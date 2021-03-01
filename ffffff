@@ -1,0 +1,59 @@
+#include <iostream>
+
+using namespace std;
+
+void present ()
+{
+	cout << "Nhap so dien thoai, dia chi de nhan qua nao !" << endl;
+		
+	int b; 
+	cout << "So dien thoai: ";
+	cin >> b;
+	cin.ignore();
+	
+	string c;
+	cout << "Dia chi: ";
+	getline ( cin , c);
+	
+	cout <<" Nhan phim 1 de xac nhan nhan qua.";
+	int d; cin >> d; 
+	if ( d == 1 )
+	{
+		cout << " Co cai lon dit con ba may ";
+	}
+	else
+	{
+		cout << " Bo di ma lam nguoi ban oi ";
+	}
+}
+
+int main()
+{
+	cout << "Random nhan pham nao bro!" << endl;
+	system("pause");
+	cout << "Nhap 1 trong cac so may man ( 0 , 9 , 11): ";
+	
+	int a;
+	cin >> a;
+	
+	if ( a == 0 )
+	{
+		cout << "Ban da trung mot bo sex toy !" << endl;
+		present ();
+	}
+	else if ( a == 9 )
+	{
+		cout << " Chuc mung ban da trung mot chuyen sextour den Japan!";
+		present ();
+	}
+	else if ( a == 11 )
+	{
+		cout << "Chuc ban may man lan sau !";
+	}
+	else 
+	{
+		cout << "Bam sai cmm roi thang ngulol";
+	}
+	
+	return 0;
+}
